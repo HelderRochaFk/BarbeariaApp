@@ -1,0 +1,10 @@
+
+Plaintext
+node_modules/
+.expo/
+npm-debug.*
+*.jks
+*.p8
+*.kwallet
+*.key
+*.keystore

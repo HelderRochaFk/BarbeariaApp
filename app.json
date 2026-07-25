@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Barbearia Maciel",
+    "slug": "barbearia-maciel-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/logo-maciel.png",
+  "plugins": [
+      "expo-notifications",
+      "expo-video"
+    ],
+    "splash": {
+      "image": "./assets/logo-maciel.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.barbeariamaciel.app"
+    },
+    "android": {
+      "package": "com.barbeariamaciel.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-maciel.png",
+        "backgroundColor": "#0A0A0A"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
