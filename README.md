@@ -1,34 +1,49 @@
-# 💈 Barbearia Maciel App
+# 💈 Aplicativo Barbearia Maciel
 
-Aplicativo mobile desenvolvido para a **Barbearia Maciel**, com foco em agendamentos, exibição de serviços, catálogo de barbeiros e integração com autenticação via Firebase.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **React Native** (com **Expo**)
-- **JavaScript**
-- **Firebase** (Authentication & Firestore Database)
-- **AsyncStorage**
+Aplicativo mobile completo desenvolvido para a **Barbearia Maciel**, permitindo que clientes façam agendamentos em tempo real, escolham profissionais e serviços, e visualizem seu histórico de atendimentos.
 
 ---
 
-## 📱 Funcionalidades
+## 📱 Telas e Funcionalidades
 
-- 🔐 **Autenticação de Usuários:** Login e cadastro via Firebase.
-- 📅 **Agendamento:** Escolha de serviços, profissionais e horários.
-- 💈 **Catálogo de Serviços:** Visualização completa de cortes e tratamentos.
-- 👤 **Perfil do Cliente:** Histórico e informações do usuário.
+- 🔐 **Autenticação & Perfil:**
+  - Login e Cadastro de clientes via Firebase Auth.
+  - Gerenciamento de perfil e histórico de agendamentos.
+
+- 📅 **Sistema de Agendamentos (BookScreen):**
+  - Seleção dinâmica de datas e horários disponíveis.
+  - Escolha de barbeiros e serviços específicos.
+
+- 💈 **Catálogo de Serviços & Preços:**
+  - Exibição de cortes, barba, tratamentos e combos com valores atualizados.
+
+- 👑 **Área Administrativa / Mensalistas:**
+  - Dashboard para controle de barbeiros e clientes mensalistas.
 
 ---
 
-## 🛠️ Como Executar o Projeto
+## 🚀 Tecnologias e Bibliotecas
 
-### Pré-requisitos
-- Node.js instalado
-- App **Expo Go** instalado no celular (iOS/Android)
+- **Core:** React Native (Expo SDK)
+- **Linguagem:** JavaScript (ES6+)
+- **Backend as a Service:** Firebase (Authentication & Firestore Database)
+- **Navegação:** React Navigation (Stack / Tabs)
+- **Armazenamento Local:** `@react-native-async-storage/async-storage`
 
-### Passo a passo
-1. **Clone este repositório:**
-   ```bash
-   git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+barbearia-maciel-app-ofc1/
+├── assets/             # Imagens, ícones e mídias do app
+├── src/
+│   ├── components/     # Componentes reutilizáveis de UI
+│   ├── context/        # React Context para gerenciamento de estado global
+│   ├── data/           # Mock data e listas auxiliares
+│   ├── screens/        # Telas da aplicação (HomeScreen, BookScreen, ProfileScreen, etc.)
+│   ├── services/       # Configuração do Firebase, Firestore e Notificações
+│   └── theme.js        # Cores, fontes e estilos globais
+├── App.js              # Ponto de entrada do aplicativo e rotas
+├── firebaseConfig.js   # Credenciais e inicialização do Firebase
+└── package.json
